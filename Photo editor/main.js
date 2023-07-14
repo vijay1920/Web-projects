@@ -1,3 +1,12 @@
+
+window.addEventListener('load', function() {
+    setTimeout(function() {
+      var preloader = document.querySelector('.preloader');
+      preloader.classList.add('fade-out');
+    }, 4000);
+  });
+  
+
 function demo()
 {
     const canvas=document.getElementById('canvas');
@@ -59,6 +68,26 @@ if(event.target.classList.contains('decrease-bright'))
             Caman('#canvas',img,function()
             {
                 this.brightness(-10).render();
+            }
+    
+)}   
+else   
+if(event.target.classList.contains('Increase-expo'))
+
+         {
+            Caman('#canvas',img,function()
+            {
+                this.exposure(10).render();
+            }
+    
+)}   
+else   
+if(event.target.classList.contains('decrease-expo'))
+
+         {
+            Caman('#canvas',img,function()
+            {
+                this.exposure(-10).render();
             }
     
 )}   
@@ -139,6 +168,16 @@ if(event.target.classList.contains('vintage'))
             Caman('#canvas',img,function()
             {
                 this.vintage().render();
+            }
+    
+)}
+else   
+if(event.target.classList.contains('black'))
+
+         {
+            Caman('#canvas',img,function()
+            {
+                this.greyscale(1.4).render();
             }
     
 )}
