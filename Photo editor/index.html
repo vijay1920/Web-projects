@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Editor</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body onload="demo();">
+    <h1>Photo editor</h1>
+    <canvas id="canvas">
+
+    </canvas>
+    <br>
+
+    select Image <input type="file" id="upload-file">
+    </input>
+    
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.1.2/caman.full.min.js">
+
+    </script>
+
+    <script type="text/javascript" src="main.js">
+
+    </script>
+    
+    <div class="Filter">
+        <h2>Filter</h2>
+        <h3>Brigthness</h3>
+        <button ="Increaseb" class="filter-btn Increase-bright"> Increase +</button>
+        <button ="Decreaseb" class="filter-btn decrease-bright"> Decrease -</button>
+        <h3>Contrast</h3>
+        <button ="Increaseb" class="filter-btn Increase-Contrast"> Increase +</button>
+        <button ="Decreaseb" class="filter-btn decrease-Contrast"> Decrease -</button>
+        <h3>Saturation</h3>
+        <button ="Increaseb" class="filter-btn Increase-Saturation"> Increase +</button>
+        <button ="Decreaseb" class="filter-btn decrease-Saturation"> Decrease -</button>
+        <h3>Brigthness</h3>
+        <button ="Increaseb" class="filter-btn Increase-bright"> Increase +</button>
+        <button ="Decreaseb" class="filter-btn decrease-bright"> Decrease -</button>
+        
+    </div>
+    <div class="Effects">
+        <h2>Effects</h2>
+        <button ="Vintage" class="filter-btn vintage">Vintage</button>
+        <button ="Vibrance" class="filter-btn Vibrance">Vibrance</button>
+        <button ="Noise" class="filter-btn Noise">Noise</button>
+        <button ="Invert" class="filter-btn Invert">Invert</button>
+    <br>
+    <button ="reset" class="filter-btn reset">Reset Filters</button>
+    </div>
+</body>
+</html>
