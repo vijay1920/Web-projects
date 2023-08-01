@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHOTO EDITOR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body onload="demo();">
+
+    <div class="preloader">
+        
+        <div class="spinner">
+            <div class="spinner1"></div>
+        </div>
+        <p>loading...</p>
+    </div>
+
+    <nav>
+    <h1>Photo Editor</h1>
+ <button><i class="fa-solid fa-headset"></i> Support</button>
+    </nav>
+    <canvas id="canvas">
+    </canvas>
+<div class="upload">
+    select Image to <button>Upload</button><input type="file" id="upload-file">
+    </input>
+</div>
+<button id="downloadBtn">Download Img</button>
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.1.2/caman.full.min.js">
+
+    </script>
+
+    <script type="text/javascript" src="main.js">
+
+    </script>
+
+    <div class="main">
+    
+    <div class="Filter">
+ 
+        <h2>Filters</h2>
+
+        <h3>Brigthness</h3>
+        <button ="Increaseb" class="filter-btn Increase-bright"> Increase +</button>
+        <button ="Decreaseb" class="filter-btn decrease-bright"> Decrease -</button>
+        <h3>Exposure</h3>
+        <button ="Increaseb" class="filter-btn Increase-expo"> Increase +</button>
+        <button ="Decreaseb" class="filter-btn decrease-expo"> Decrease -</button>
+        <h3>Contrast</h3>
+        <button ="Increaseb" class="filter-btn Increase-Contrast"> Increase +</button>
+        <button ="Decreaseb" class="filter-btn decrease-Contrast"> Decrease -</button>
+        <h3>Saturation</h3>
+        <button ="Increaseb" class="filter-btn Increase-Saturation"> Increase +</button>
+        <button ="Decreaseb" class="filter-btn decrease-Saturation"> Decrease -</button>
+
+        
+    </div>
+    <div class="Effects">
+        <h2>Effects</h2>
+        <button ="Vintage" class="filter-btn vintage">Vintage</button>
+        <button ="Vibrance" class="filter-btn Vibrance">Vibrance</button>
+        <button ="Noise" class="filter-btn Noise">Noise</button>
+        <button ="Invert" class="filter-btn Invert">Invert</button>
+        <button ="Invert" class="filter-btn black">Black/white</button>
+
+</div>
+<button ="reset" class="filter-btn reset"><span>Reset</span></button>
+<div class="fot"data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
+    <div class="fotw">
+        <p>Live Learn Level-up</p>
+    </div>
+<div class="iii">
+    <a href="#"> <i class="fa-brands fa-github"></i></a>
+    <a href="#"> <i class="fa-solid fa-envelope"></i></a>
+    <a href="#"> <i class="fa-brands fa-linkedin"></i></a>
+    <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+    <a href="#"> <i class="fa-brands fa-whatsapp"></i></a>
+</div>
+    <div class="fotw" >
+        <p>HandCarfted by me <i class="fa-sharp fa-regular fa-copyright"></i> Vijayakumar S</p>
+    </div>
+        </div>
+</div>
+<script>
+    AOS.init();
+  </script>
+
+   
+</body>
+</html>

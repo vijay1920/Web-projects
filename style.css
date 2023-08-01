@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 1;
+  animation: whole  5s ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .preloader p{
+position: absolute;
+top:57%; left:47.5%;
+  }
+  @keyframes whole
+  {
+    0%
+    {
+  z-index: 101;
+    }
+    1%{
+      z-index: 101;
+    }
+    99%{
+      z-index: 101;
+    }
+    100%{
+  z-index: -10000;
+    }
+  }
+  .fade-out {
+    opacity: 0;
+    z-index: -100;
+  }
+  
+
+.spinner {
+    background-image: linear-gradient(rgb(186, 66, 255) 35%,rgb(0, 225, 255));
+    width: 100px;
+    height: 100px;
+    animation: spinning82341 1.7s linear infinite;
+    text-align: center;
+    border-radius: 50px;
+    filter: blur(1px);
+    box-shadow: 0px -5px 20px 0px rgb(186, 66, 255), 0px 5px 20px 0px rgb(0, 225, 255);
+  }
+  
+  .spinner1 {
+    background-color: rgb(36, 36, 36);
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    filter: blur(10px);
+  }
+  
+  @keyframes spinning82341 {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+#canvas
+{
+    position: fixed;
+    top:20%; right: 5%;
+    width:400px;
+    height: 300px;
+    border: 3px solid black;
+    background-color: rgba(240, 248, 255, 0.315);
+  background-repeat: no-repeat;
+  background-position: center;
+    border-radius: 25px;
+
+}
+.upload
+{
+    position: fixed;
+    top:60%; right: -11%;
+    color: rgb(0, 0, 0);
+padding-top: 25px;
+    font-family:'Tenor Sans', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+.upload button{
+    padding: 8px 25px;
+    line-height: 1.5;
+    border-radius: 15px;
+    background-color: rgb(0, 0, 0);
+    border: 0;
+    overflow: hidden;
+    color: white;
+    cursor: pointer;
+
+}
+.upload input
+{
+    cursor: pointer;
+ transform: scale(2);
+ opacity: 0;
+ 
+}
+#downloadBtn
+{
+    position: fixed;
+    font-size: 18px;
+    top:69.5%; right: 22%;
+    padding-left: 35px;
+    padding:  15px 8px;
+    background: radial-gradient( 100% 100% at 100% 0%, #89E5FF 0%, #5468FF 100% );
+    border: 0;
+    color: white;
+    cursor: pointer;
+    border-radius: 0.3em;
+    box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%), 0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%), inset 0px -0.01em 0px rgb(58 65 111 / 50%);
+}
+
+
+nav h1{
+    font-size: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-family: 'VT323', monospace;
+   font-weight: 500;
+   padding-top: 10px;
+   margin-left: 120px;
+   
+z-index: 0;
+   
+}
+nav
+{display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    position: fixed;
+    top:0;left: 0;
+    height: 100px;
+    width: 100%;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    
+}
+
+nav button{
+    padding: 8px 20px;
+    color: white;
+    border-radius: 15px;
+    background-color: rgb(0, 0, 0);
+    border: 0;
+    margin-right: 25px;
+}
+body{
+    font-family:'Tenor Sans', sans-serif;
+    background-image: url(https://images.unsplash.com/photo-1667648865980-826cd13e3a24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+   
+}
+.Filter{
+    height: 500px;
+    width: 400px;
+    border: 1px solid black;
+    margin: 150px 50px;
+   text-align: center;
+   background-color: rgba(43, 43, 43, 0.130);
+   backdrop-filter: blur(10px);
+   border: 3px solid rgba(255, 255, 255, 0.2);
+   border-radius: 25px;
+   color: white;
+   text-shadow: 0 2px 0 rgba(0, 0, 0, 0.87);
+   
+  
+}
+
+.Effects
+
+{
+    height: 280px;
+    width: 400px;
+    border: 1px solid black;
+    margin-left:50px;
+    text-align: center;
+    background-color: rgba(43, 43, 43, 0.130);
+    backdrop-filter: blur(10px);
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    margin-top: -80px;
+    color: white;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.87);
+    
+}
+.Effects button{
+
+  padding-top:15px;
+  margin-left: 0px;
+  margin-bottom: 25px;
+    width:150px;
+   
+}
+.reset{
+    position: fixed;
+    top:70%; right: 10%;
+ 
+    padding-left: 35px;
+
+}
+.main button{
+    padding: 4px 5px;
+    font-size: 18px;
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    will-change: box-shadow,transform;
+    background: radial-gradient( 100% 100% at 100% 0%, #89E5FF 0%, #5468FF 100% );
+    box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%), 0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%), inset 0px -0.01em 0px rgb(58 65 111 / 50%);
+    padding: 0 2em;
+    border-radius: 0.3em;
+    color: #fff;
+    height: 2.6em;
+    text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+    
+  }
+  
+  button:hover {
+    box-shadow: 0px 0.1em 0.2em rgb(45 35 66 / 40%), 0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px #3c4fe0;
+    transform: translateY(-0.1em);
+  }
+  
+  button:active {
+    box-shadow: inset 0px 0.1em 0.6em #3c4fe0;
+    transform: translateY(0em);
+  }
+
+
+  
+.fot
+{
+margin-top: 100px;
+ height: 140px;
+ width: 100%;
+ background-color: black;
+
+ ;
+}
+.iii{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+
+}
+
+.fot a{
+  padding: 10px 10px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 50%;
+margin: 0 5px;
+
+}
+.fotw
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+font-size: 15px;
+font-family: 'Mitr', sans-serif;
+color: white;
+margin-top: 0;
+
+}
+.fot a:hover{
+    color: rgb(0, 0, 0);
+background-color: white;
+ 
+}
